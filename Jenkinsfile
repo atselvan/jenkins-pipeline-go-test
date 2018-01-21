@@ -2,7 +2,7 @@
 
 import com.privatesquare.pipeline.utils.Git
 
-Git git
+def git = new Git()
 
 node{
     stage('checkout'){
