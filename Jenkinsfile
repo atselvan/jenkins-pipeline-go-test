@@ -9,5 +9,6 @@ node{
         checkout scm
         print getScmType(scm)
         print git.getUrl()
+        print git.createNextTagVersion("1.0")
     }
 }
