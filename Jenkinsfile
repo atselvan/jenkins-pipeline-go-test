@@ -8,6 +8,6 @@ node{
     stage('checkout'){
         checkout scm
         print getScmType(scm)
-        git.getUrl
+        git.getUrl()
     }
 }
