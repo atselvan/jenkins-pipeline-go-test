@@ -2,7 +2,7 @@ import hudson.plugins.git.GitSCM
 
 node{
     stage('checkout'){
-        def scm = git credentialsId: 'bitbucket', url: 'https://bitbucket.org/privatesquare/sonarqube-cli.git'
+        checkout scm
         print getScmType(scm)
     }
 }
